@@ -1,0 +1,59 @@
+.manager, .sale, .money, .communication{
+    position: relative;
+    width: 1140px;
+}
+.manager h2, .sale h2, .money h2, .communication h2 {
+    color: rgb(233, 117, 40);
+    font-weight: 400;
+    margin: 5px 0 10px 0;
+}
+.manager h2:hover, .sale h2:hover, .money h2:hover, .communication h2:hover {
+    text-decoration: underline;
+    color:  rgb(7, 103, 212);
+    cursor: pointer;
+}
+.slider{
+    overflow: hidden;
+    width: 100%;
+}
+.manager ul, .sale ul, .money ul, .communication ul{
+    list-style: none; 
+    display: flex;
+    transition: all 0.3s linear;
+}
+.manager li, .sale li, .money li, .communication li {
+    flex: 1 0 100%;
+    width: 100%;
+}
+.manager .list-book, .sale .list-book, .money .list-book, .communication .list-book{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+.button {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    top: 50%;
+    transform: translateY(-50%);
+    color:#FFF;
+    background-color: rgba(0,0,0,0.4);
+    z-index: 10;
+}
+.button:hover {
+    background-color: rgba(0,0,0,0.6);
+    cursor: pointer;
+}
+.button.disable {
+    cursor:text;
+    color: rgb(253, 238, 238);
+    background-color: #CCC;
+}
+.prev {
+    left: 5px;
+}
+.next {
+    right: 5px;
+}
